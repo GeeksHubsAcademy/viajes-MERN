@@ -54,7 +54,7 @@ const Header = props => {
 
             <Link className="logButton" to="/logout">LOG OUT</Link> */}
 
-                    <Link className="logButton" to="/registro">Registro</Link>
+                    <Link className="logButton" to="/registro">REGISTRO </Link>
                     <Link className="logButton" to="/login">LOG IN</Link>
 
                 </div>
