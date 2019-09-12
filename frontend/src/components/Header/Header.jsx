@@ -1,60 +1,61 @@
 import React from 'react';
-import './Header.scss'
+import './Header.scss';
+import {Link} from 'react-router-dom'
 const Header = props => {
     return (
         <nav>
-            <a href="/">
+            <Link to="/">
                 <div className="logo">
                     <img src="images/iconoweb.png" alt="logo" />
                     <p>Geekshubs <br />
                         Travels </p>
                 </div>
-            </a>
+            </Link>
             <ul>
-                <a href="#destinos">
+                <Link to="#destinos">
                     <li>Destinos </li>
-                </a>
-                <a href="#quienesSomos">
+                </Link>
+                <Link to="#quienesSomos">
                     <li>Quién somos </li>
-                </a>
-                <a href="#dondeEstamos">
+                </Link>
+                <Link to="#dondeEstamos">
                     <li>Donde estamos</li>
-                </a>
+                </Link>
             </ul>
             <div className="pos-f-t">
                 <div className="collapse" id="navbarToggleExternalContent">
                     <div className="bg-dark p-4">
                         <h4 className="text-white">
-                            <a href="#destinos">
+                            <Link to="#destinos">
                                 Destinos
-                    </a></h4>
+                    </Link></h4>
                     </div>
                     <div className="bg-dark p-4">
-                        <h4 className="text-white"> <a href="#quienesSomos">
+                        <h4 className="text-white"> <Link to="#quienesSomos">
                             Quién somos
-                    </a></h4>
+                    </Link></h4>
                     </div>
                     <div className="bg-dark p-4">
-                        <h4 className="text-white"><a href="#destinos">
+                        <h4 className="text-white"><Link to="#destinos">
                             Donde estamos
-                    </a></h4>
+                    </Link></h4>
                     </div>
                 </div>
-                {/* <nav className="navbar navbar-dark bg-dark">
+                <nav className="navbar navbar-dark bg-dark">
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-        </nav> */}
+        </nav>
                 <div className="user">
-                    {/* <a href="/profile" > <img className="profilePicture" src={{user.imagePath}} >
-                <img className="edit" src="/images/edit.png" alt="edit" /></a>
+                    {/* <Link to="/profile" > <img className="profilePicture" src={{user.imagePath}} >
+                <img className="edit" src="/images/edit.png" alt="edit" /></Link>
 
-            <a className="logButton" href="/logout">LOG OUT</a> */}
+            <Link className="logButton" to="/logout">LOG OUT</Link> */}
 
-                    <a className="logButton" href="/register">SIGN UP</a>
-                    <a className="logButton" href="/login">LOG IN</a>
+                    <Link className="logButton" to="/registro">Registro</Link>
+                    <Link className="logButton" to="/login">LOG IN</Link>
 
                 </div>
             </div>
