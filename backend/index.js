@@ -4,7 +4,7 @@ const app = express();
 const morgan=require('morgan');
 const winston=require('./config/winston.js');
 const userRouter=require('./routes/users.js');
-const port= proccess.env.PORT || 3001;
+const port= process.env.PORT || 3001;
 // app.use( function ( req, res, next ) {
 //     res.header( "Access-Control-Allow-Origin", "*" );
 //     res.header( "Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept" );
