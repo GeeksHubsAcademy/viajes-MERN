@@ -8,7 +8,7 @@
     "dev":"concurrently \"npm run dev:front\"  \"npm run dev:back\" ",
     "dev:front":"cd frontend && npm run dev",
     "dev:back":"cd backend && npm run dev",
-    "install:front":"cd ../frontend && npm install",
+    "install:front":"cd frontend && npm install",
     "install:back":"cd backend && npm install ",
     "postinstall": "npm run install:front && npm run install:back "
   },
